@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 68px 68px calc(100vh-216px) 80px;
+    grid-template-areas:
+    "menu-nav"
+    "section"
+    "main"
+    "footer"
+}
+
+.b {
+    border: 1px solid #d4d8d8;
+}
+
+
+.menu-nav {
+    grid-area: menu-nav;
+    background-color: #2d7cc5;
+}
+
+.menu-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+
+.icono p {
+    display: inline;
+}
+
+section {
+    grid-area: section;
+    padding: 0.3em;
+    background-color: #d4d8d8;
+    color: black;
+    text-align: center;
+}
+
+section > p {
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+}
+
+.filtro {
+     padding: 0.4em 0.5em;
+     width: 95%;
+     text-align: left;
+}
+
+main {
+    grid-area: main;
+    padding: 3em 1.5em 1em 1.5em;
+    overflow-y: scroll;
+}
+
+footer {
+    grid-area: footer;
+    padding: 1.5em;
+    text-align: center;
+    background-color: #16477d;
+    color: white;
+}
+
+footer > p {
+    padding-top: 0.2em;
+}
+
+i {
+    padding-left: 3px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1em;
+    margin-bottom: 20px
+}
+
+.imagen{
+    background-image: url(../img/miniauto.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 25rem;
+}
+
+button {
+    margin-top: .5em;
+    background-color: #2d7cc5;
+    padding: 0.5em 0.7em;
+    border-radius: 8px;
+    color: whitesmoke;
+}
+
+.info {
+    padding-top: 1em;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+    color: #2d7cc5;
+}
+
+li {
+    border: 1px solid #d4d8d8;
+    display: inline;
+    padding: 0.5em 1em;
+}
+
+.menu li {
+    border: none;
+}
+
+@media (min-width: 576px) {
+    .container {
+        grid-template-columns: 200px auto;
+        grid-template-areas:
+        "menu-nav section section"
+        "menu-nav main main"
+        "footer main main";
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        flex-grow: 1;
+        flex-basis: 14.5rem;
+    }
+
+    .menu-1 .barra {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        color: whitesmoke;
+        border: none;
+        visibility: visible;
+    }
+
+    .menu-1 {
+        display: flex;
+        justify-content: center;
+    }
+
+   .imagen {
+        min-height: 11rem;
+   }
+}
+
+
+
+
+
+
