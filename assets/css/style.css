@@ -6,7 +6,7 @@
 
 .container {
     display: grid;
-    grid-template-rows: 68px 68px calc(100vh-216px) 80px;
+    grid-template-rows: 68px 68px calc(100vh - 216px) 80px;
     grid-template-areas:
     "menu-nav"
     "section"
@@ -92,7 +92,7 @@ i {
     background-image: url(../img/miniauto.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 25rem;
+    min-height: 23rem;
 }
 
 button {
@@ -142,7 +142,7 @@ li {
 
     .card {
         flex-grow: 1;
-        flex-basis: 14.5rem;
+        max-width: 450px;
     }
 
     .menu-1 .barra {
@@ -163,9 +163,14 @@ li {
     }
 
    .imagen {
-        min-height: 11rem;
+    height: 350px;
+    min-width: 370px;
+    max-width: 480px;
+    flex-grow: 1;
    }
 }
+
+
 
 
 
