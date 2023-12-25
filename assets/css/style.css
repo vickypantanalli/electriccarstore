@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container {
+body {
     display: grid;
     grid-template-rows: 68px 68px calc(100vh - 216px) 80px;
     grid-template-areas:
@@ -126,10 +126,11 @@ li {
 }
 
 @media (min-width: 576px) {
-    .container {
+    body {
         grid-template-columns: 200px auto;
         grid-template-areas:
         "menu-nav section section"
+        "menu-nav main main"
         "menu-nav main main"
         "footer main main";
     }
@@ -164,7 +165,6 @@ li {
 
    .imagen {
     min-width: 18rem;
-    /* max-width: 480px; */
     flex-grow: 1;
    }
 }
