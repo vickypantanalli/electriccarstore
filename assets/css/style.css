@@ -92,7 +92,7 @@ i {
     background-image: url(../img/miniauto.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 23rem;
+    height: 16rem;
 }
 
 button {
