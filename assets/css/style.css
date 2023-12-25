@@ -163,9 +163,8 @@ li {
     }
 
    .imagen {
-    height: 350px;
-    min-width: 370px;
-    max-width: 480px;
+    min-width: 18rem;
+    /* max-width: 480px; */
     flex-grow: 1;
    }
 }
