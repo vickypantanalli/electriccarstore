@@ -33,6 +33,7 @@ body {
 
 .menu {
     display: none;
+    padding-top: .5em;
 }
 
 .icono p {
