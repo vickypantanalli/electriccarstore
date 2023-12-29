@@ -67,7 +67,7 @@ main {
 
 footer {
     grid-area: footer;
-    padding: 1.5em;
+    padding: 1em;
     text-align: center;
     background-color: #16477d;
     color: white;
